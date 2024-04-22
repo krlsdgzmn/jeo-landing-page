@@ -9,7 +9,7 @@
   <body>
     <main class="bg-primary text-white h-[667px] flex flex-col">
       <nav
-        class="container py-6 mx-auto flex justify-between items-center h-32"
+        class="container sticky py-6 mx-auto flex justify-between items-center h-32"
       >
         <div class="flex w-24 justify-between items-center">
           <svg
@@ -64,7 +64,9 @@
           <a href="#">About</a>
           <a href="#">Services</a>
           <a href="#">Sign In</a>
-          <a href="#" class="border-2 font-bold py-3 px-6 rounded-md"
+          <a
+            href="#"
+            class="border-2 font-bold py-3 px-6 rounded-md hover:bg-white hover:text-primary transition-colors"
             >Be a Provider</a
           >
         </div>
@@ -82,7 +84,7 @@
               placeholder="Search for services nearby"
             />
             <button
-              class="bg-primary border-2 text-white px-6 py-2 rounded-md ml-4"
+              class="bg-primary hover:bg-white hover:text-primary transition-colors font-bold border-2 text-white px-6 py-2 rounded-md ml-4"
             >
               Search
             </button>
@@ -193,7 +195,9 @@
             </li>
           </ul>
 
-          <button class="mt-8 bg-[#FF6B00] text-white py-3 px-8 rounded-lg">
+          <button
+            class="mt-8 hover:bg-black font-bold transition-colors bg-[#FF6B00] text-white py-3 px-8 rounded-lg"
+          >
             Explore Services
           </button>
         </div>
@@ -294,10 +298,25 @@
         <h3 class="text-gray-800 font-bold text-6xl">
           Hundreds of services, and counting
         </h3>
-        <div class="flex gap-x-10">
-          <img src="assets/catering.png" alt="catering" />
+        <div class="flex gap-x-10 mt-20">
+          <img
+            src="assets/place-holder.png"
+            class="object-scale-down h-[90%]"
+            alt="catering"
+          />
         </div>
+        <button
+          class="mt-20 bg-secondary hover:bg-red-500 text-white py-3 px-8 rounded-lg font-bold"
+        >
+          Find Services
+        </button>
       </div>
+    </section>
+
+    <section class="bg-[#F1F5F9] text-white h-[667px] flex flex-col">
+      <div
+        class="container mx-auto h-full flex flex-col justify-center items-center"
+      ></div>
     </section>
   </body>
 </html>
